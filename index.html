@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--======================  CSS ======================-->
+    <link rel="stylesheet" href="Archivos/css/styles.css">
+
+    <!--===================== ICONO NAVEGADOR ======================-->
+    <link rel="icon" href="Archivos/img/logo SG.png">
+
+    <!--=====================  REMIX ICON  ================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Sebastian Guevara</title>
+</head>
+
+<body>
+
+    <!--=================== HEADER PERFIL =====================-->
+    <header class="perfil container">
+        <div class="perfil__container">
+            <div class="perfil__datos">
+                <div class="perfil__border">
+                    <div class="perfil__imagen">
+                        <img src="Archivos/img/foto__perfil.png" alt="">
+                    </div>
+                </div>
+
+                <h2 class="perfil__nombre">Sebastian Guevara</h2>
+                <h3 class="perfil__profesion">Ingeniero De Sistemas</h3>
+
+                <ul class="perfil__social">
+                    <a href="https://github.com/JuanGuevara99" target="_blanck" class="perfil__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/juan-sebastian-guevara-nino/" target="_blanck"
+                        class="perfil__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://wa.link/vwwxna" target="_blanck" class="perfil__social-link">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="perfil__button">
+                <a href="https://drive.google.com/file/d/1syZX2qBD-4ufLmPpkY_P2AifvFPHAB_P/view?usp=sharing"
+                    target="_blanck" class="button">Descargar CV
+                    <i class="ri-download-cloud-line"></i>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!--======================  MAIN  =========================-->
+    <main class="main">
+        <section class="filters container">
+            <!-- Filtrar pestañas -->
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#skills">
+                    Habilidades
+                </button>
+
+                <button class="filters__button" data-target="#projects">
+                    Proyectos
+                </button>
+            </ul>
+            <div class="filters__sections">
+                <!-------- Habilidades --------->
+                <div class="skills__content grid filters__active" data-content id="skills">
+
+                    <!-- Frontend Developer -->
+                    <div class="skills__area">
+                        <h2 class="skills__title">
+                            <i class="ri-braces-line"></i> Frontend Developer
+                        </h2>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/html-1.svg" alt="HTML5">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Avanzado</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/css-3.svg" alt="CSS">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Avanzado</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/logo-javascript.svg" alt="JavaScript">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/github-icon-1.svg" alt="github">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">GitHub</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Backend Developer -->
+                    <div class="skills__area">
+                        <h2 class="skills__title">
+                            <i class="ri-braces-line"></i> Backend Developer
+                        </h2>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/mysql-logo.svg" alt="MySQL">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/firebase-1.svg" alt="Firebase">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Firebase</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/java-4.svg" alt="Java">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__level">Avanzado</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/kotlin-1.svg" alt="Kotlin">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Kotlin</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas -->
+                    <div class="skills__area">
+                        <h2 class="skills__title">
+                            <i class="ri-braces-line"></i> Herramientas
+                        </h2>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/github-icon-1.svg" alt="GitHub">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">GitHub</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/visual-studio-code-1.svg" alt="Visual Studio">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Visual Studio</h3>
+                                        <span class="skills__level">Avanzado</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/mysqlworkbench_93532.png" alt="Workbench">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Workbench</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    
+                            <div class="skills__group">
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/netbeans.svg" alt="netbeans">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">NetBeans</h3>
+                                        <span class="skills__level">Avanzado</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/android-4.svg" alt="Android Studio">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Android Studio</h3>
+                                        <span class="skills__level">Avanzado</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__blob">
+                                    <img src="Archivos/img/xampp.svg" alt="xampp">
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills__name">Xampp</h3>
+                                        <span class="skills__level">Avanzado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------- Proyectos --------->
+                <div class="projects__content grid" data-content id="projects">
+                    <!--Proyecto 1-->
+                    <article class="projects__card">
+                        <img src="Archivos/img/para sumercé.png" alt="ecomerce para sumercé" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Ecommerce</span>
+                                <h3 class="projects__title">Para Sumercé</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Proyecto 2-->
+                    <article class="projects__card">
+                        <img src="Archivos/img/para sumercé2.png" alt="ecomerce para sumercé" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Inventario</span>
+                                <h3 class="projects__title">Proyecto 2</h3>
+                                <a href="#" class="projects__button button button__small">
+                                    <i class="ri-external-link-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!--=======================  FOOTER  ==========================-->
+    <footer class="footer container">
+
+    </footer>
+
+
+
+
+
+    <!--========================  SCROLLREVEAL  ======================-->
+    <script src=""></script>
+
+
+    <!--========================  MAIN JS  =============================-->
+    <script src="Archivos/js/main.js"></script>
+
+</body>
+
+</html>
