@@ -242,6 +242,10 @@ body .dark-theme{
     background: var(--body-color);
 }
 
+.filters__sections{
+    margin-bottom: 35px;
+}
+
 
 /*============ HABILIDADES ==============*/
 .skills__content {
@@ -390,6 +394,65 @@ body .dark-theme{
 }
 
 
+/*======================== SECCIÓN CONTACTO ======================*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--first-color);
+}
+
+.contact h2 {
+    color: var(--container-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact form {
+    width: 600px;
+    text-align: center;
+}
+
+.form .input__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 1px solid #000000;
+    outline: none;
+    border-radius: 10px;
+    font-size: var(--normal-font-size);
+    color: var(--container-color);
+    margin: 12px 0;
+}
+
+.field .item::placeholder {
+    color: rgb(204, 204, 204);
+}
+
+.textarea__field .item {
+    resize: none;
+}
+
+.contact__button button {
+    background: var(--container-color);
+    border: none;
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+.contact__button button i {
+    font-weight: 400;
+}
+
+
+
 /*==================== FOOTER ======================*/
 .footer {
     background-color: var(--text-color);
@@ -420,7 +483,7 @@ body .dark-theme{
     margin-bottom: 10px;
 }
 
-.about, .contact, .link {
+.about, .contact__footer, .link {
     width: 0 30%;
 }
 
@@ -442,25 +505,25 @@ body .dark-theme{
     color: var(--first-color);
 }
 
-.contact h2 {
+.contact__footer h2 {
     margin-bottom: 10px;
 }
 
-.contact a:hover {
+.contact__footer a:hover {
     color: var(--first-color);
 }
 
-.contact ul li {
+.contact__footer ul li {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.contact ul li a {
+.contact__footer ul li a {
     color: var(--container-color);
 }
 
-.contact ul li span {
+.contact__footer ul li span {
     margin-right: 15px;
 }
 
@@ -482,7 +545,7 @@ body .dark-theme{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(to right, var(--first-color), var(--color-grey));
+    background: linear-gradient(to right, var(--color-grey), var(--first-color));
     border-radius: 10px;
 }
 
@@ -595,9 +658,20 @@ body .dark-theme{
         margin-bottom: 1.5rem;
     }
 
-    .about, .contact, .link {
+    .about, .contact__footer, .link {
         width: 100%;
     }
+
+    .contact {
+        min-height: 90vh;
+        
+    }
+
+    .contact form {
+        width: 500px;
+        text-align: center;
+    }
+
 
     .footer__copy {
         margin: 2rem 0; 
@@ -611,6 +685,16 @@ body .dark-theme{
 
 /* Tamaño pequeño */
 @media screen and (max-width: 767px) {
+
+    .contact {
+        min-height: 100vh;
+    }
+
+    .contact form {
+        width: auto;
+        text-align: center;
+    }
+
     .social__media {
         display: flex;
         margin: 1.5rem 0;
