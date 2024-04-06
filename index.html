@@ -319,23 +319,30 @@
             <div class="input__box">
                 <div class="input__field field">
                     <input type="text" placeholder="Nombre" id="name" class="item" autocomplete="off">
+                    <div class="error__txt">* Espacio nombre en blanco</div>
                 </div>
 
                 <div class="input__field field">
                     <input type="text" placeholder="Correo electrónico" id="email" class="item" autocomplete="off">
+                    <div class="error__txt email">* Espacio correo electrónico en blanco</div>
                 </div>
+            </div>
 
+            <div class="input__box">
                 <div class="input__field field">
                     <input type="text" placeholder="Celular" id="phone" class="item" autocomplete="off">
+                    <div class="error__txt">* Espacio celular en blanco</div>
                 </div>
 
                 <div class="input__field field">
                     <input type="text" placeholder="Asunto" id="subject" class="item" autocomplete="off">
+                    <div class="error__txt">* Espacio asunto en blanco</div>
                 </div>
             </div>
 
             <div class="textarea__field field">
                 <textarea name="" id="message" cols="30" rows="10" placeholder="Deje su mensaje" class="item" autocomplete="off"></textarea>
+                <div class="error__txt">* Espacio mensaje en blanco</div>
             </div>
 
             <div class="contact__button">
@@ -406,9 +413,11 @@
 
 
 
-    <!--========================  SCROLLREVEAL  ======================-->
-    <script src=""></script>
+    <!--========================  ENVIAR CORREO  ======================-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
+    <!--========================  ALERTA DE MENSAJES  ======================-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!--========================  MAIN JS  =============================-->
     <script src="Archivos/js/main.js"></script>
