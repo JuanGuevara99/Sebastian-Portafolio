@@ -213,6 +213,41 @@ body .dark-theme{
 }
 
 
+/*======================== SECCIÓN SOBRE MÍ ===============================*/
+.about__me {
+    padding: 3rem;
+    background-color: var(--color-grey);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.about__me h2 {
+    padding-bottom: 15px;
+}
+
+.container__about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__img {
+    width: 30%;
+    margin-top: 2rem;
+}
+
+span {
+    color: var(--first-color);
+}
+
+
 /*====================== FILTRAR PESTAÑAS =============================*/
 .filters__content {
     margin: 2rem 0 2.5rem;
