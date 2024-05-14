@@ -14,16 +14,15 @@
     <!--=====================  REMIX ICON  ================-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <title>Sebastian Guevara</title>
 </head>
 
 <body>
-
-    <!--=================== HEADER PERFIL =====================-->
-    <header class="perfil container">
-        <!-- Botón modo noche -->
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
-
+     <!--=================== HEADER PERFIL =====================-->
+     <header class="perfil container">
 
         <div class="perfil__container">
             <div class="perfil__datos">
@@ -62,7 +61,9 @@
     </header>
 
 
-    <section class="about__me">
+
+
+    <section class="about__me" id="about">
         <h2>SOBRE MÍ</h2>
         <div class="container__about">
             <div class="about__content">
@@ -78,7 +79,7 @@
     </section>
 
     <!--======================  MAIN  =========================-->
-    <main class="main">
+    <main class="main" id="habilidades">
         <section class="filters container">
             <!-- Filtrar pestañas -->
             <ul class="filters__content">
@@ -138,12 +139,12 @@
 
                             <div class="skills__group">
                                 <div class="skills__blob">
-                                    <img src="Archivos/img/github-icon-1.svg" alt="github">
+                                    <img src="Archivos/img/bootstrap-5-1.svg" alt="github">
                                 </div>
                                 <div class="skills__data">
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
-                                        <h3 class="skills__name">GitHub</h3>
+                                        <h3 class="skills__name">Boostrap 5</h3>
                                         <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
@@ -181,7 +182,7 @@
                                         <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="skills__blob">
                                     <img src="Archivos/img/java-4.svg" alt="Java">
                                 </div>
@@ -227,7 +228,7 @@
                                         <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="skills__blob">
                                     <img src="Archivos/img/visual-studio-code-1.svg" alt="Visual Studio">
                                 </div>
@@ -238,7 +239,7 @@
                                         <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="skills__blob">
                                     <img src="Archivos/img/mysqlworkbench_93532.png" alt="Workbench">
                                 </div>
@@ -250,8 +251,8 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                    
+
+
                             <div class="skills__group">
                                 <div class="skills__blob">
                                     <img src="Archivos/img/netbeans.svg" alt="netbeans">
@@ -263,7 +264,7 @@
                                         <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="skills__blob">
                                     <img src="Archivos/img/android-4.svg" alt="Android Studio">
                                 </div>
@@ -274,7 +275,7 @@
                                         <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="skills__blob">
                                     <img src="Archivos/img/xampp.svg" alt="xampp">
                                 </div>
@@ -298,16 +299,17 @@
 
                         <div class="projects__modal">
                             <div>
-                                <span class="projects__subtitle">Ecommerce</span>
+                                <span class="projects__subtitle">Plataforma de servicios</span>
                                 <h3 class="projects__title">Para Sumercé</h3>
-                                <a href="https://juanguevara99.github.io/ParaSumerce.github.io/" class="projects__button button button__small">
+                                <a href="https://web-para-sumerce-ccn.pages.dev/"
+                                    class="projects__button button button__small">
                                     <i class="ri-external-link-line"></i>
                                 </a>
                             </div>
                         </div>
                     </article>
 
-                    <!--Proyecto 2-->
+                    <!--Proyecto 2
                     <article class="projects__card">
                         <img src="Archivos/img/para sumercé2.png" alt="ecomerce para sumercé" class="projects__img">
 
@@ -320,7 +322,7 @@
                                 </a>
                             </div>
                         </div>
-                    </article>
+                    </article>-->
                 </div>
             </div>
         </section>
@@ -328,7 +330,7 @@
 
 
     <!--=======================  CONTACTO  ==========================-->
-    <section class="contact">
+    <section class="contact" id="contacto">
         <h2>CONTACTO</h2>
         <form action="#">
             <div class="input__box">
@@ -356,7 +358,8 @@
             </div>
 
             <div class="textarea__field field">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Deje su mensaje" class="item" autocomplete="off"></textarea>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Deje su mensaje" class="item"
+                    autocomplete="off"></textarea>
                 <div class="error__txt">* Espacio mensaje en blanco</div>
             </div>
 
@@ -393,15 +396,16 @@
                     </ul>
                 </div>
             </div>
-    
+
             <div class="footer_width link">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>            
+                    <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
             </div>
-    
+
             <div class="footer_width contact__footer">
                 <h2>Contacto</h2>
                 <ul>

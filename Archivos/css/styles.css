@@ -61,30 +61,6 @@ img {
 }
 
 
-/*================ MODO NOCHE ======================*/
-.change-theme {
-    position: absolute;
-    top: 1.5rem;
-    right: 0;
-    font-size: 1.25rem;
-    color: var(--text-color);
-    cursor: pointer;
-    transition: .3s;
-}
-
-.change-theme:hover{
-    color: var(--title-color);
-    --title-color: hsl(24, 100%, 50%);
-    --text-color: hsl(30, 6%, 13%);
-    --container-color: #000000;
-}
-
-/*-- Variables modo noche --*/
-body .dark-theme{
-    --first-color: hsl(0, 0%, 0%);
-    --second-color: hsl(0, 0%, 0%);
-}
-
 
 /*================== CODIGO REUSABLE CSS CLASES ======================*/
 .container {
@@ -277,7 +253,7 @@ span {
     background: var(--body-color);
 }
 
-.filters__sections{
+.filters__sections {
     margin-bottom: 35px;
 }
 
@@ -286,6 +262,7 @@ span {
 .skills__content {
     row-gap: 3.5rem;
 }
+
 .skills__title {
     font-size: var(--normal-font-size);
     text-align: center;
@@ -324,24 +301,28 @@ span {
 }
 
 @keyframes bounce-skills {
-    0%{
+    0% {
         transform: translate(0);
     }
-    20%{
+
+    20% {
         transform: translateY(-6px);
     }
-    40%{
+
+    40% {
         transform: translate(0);
     }
-    60%{
+
+    60% {
         transform: translateY(-3px);
     }
-    80%{
+
+    80% {
         transform: translate(0);
     }
 }
 
-.skills__subtitle{
+.skills__subtitle {
     font-size: var(--small-font-size);
     color: var(--text-color);
 }
@@ -395,7 +376,7 @@ span {
 }
 
 .projects__subtitle,
-.projects__title{
+.projects__title {
     color: var(--container-color);
 }
 
@@ -415,11 +396,11 @@ span {
 
 
 /*-- Esconder y mostrar Habilidades y proyectos --*/
-.filters [data-content]{
+.filters [data-content] {
     display: none;
 }
 
-.filters__active[data-content]{
+.filters__active[data-content] {
     display: grid;
 }
 
@@ -538,11 +519,13 @@ form .textarea__field .error__txt {
     width: 30%;
 }
 
-.about h2{
+.about h2 {
     margin-bottom: 10px;
 }
 
-.about, .contact__footer, .link {
+.about,
+.contact__footer,
+.link {
     width: 0 30%;
 }
 
@@ -595,15 +578,15 @@ form .textarea__field .error__txt {
 
 
 /*=================== BARRA DE NAVEGACIÓN =====================*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: var(--color-grey);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: linear-gradient(to right, var(--color-grey), var(--first-color));
     border-radius: 10px;
 }
@@ -664,6 +647,7 @@ form .textarea__field .error__txt {
 
 
 @media screen and (min-width: 776px) {
+
     .projects__content,
     .skills__content {
         grid-template-columns: repeat(2, 332px);
@@ -676,6 +660,7 @@ form .textarea__field .error__txt {
 }
 
 @media screen and (min-width: 1200px) {
+
     .projects__content,
     .skills__content {
         grid-template-columns: repeat(3, 332px);
@@ -688,13 +673,13 @@ form .textarea__field .error__txt {
 }
 
 /* Tamaño grande */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
     .container {
         margin-left: 1rem;
         margin-right: 1rem;
     }
 
-    .perfil__button{
+    .perfil__button {
         flex-direction: column;
         row-gap: 1rem;
     }
@@ -717,12 +702,14 @@ form .textarea__field .error__txt {
         margin-bottom: 1.5rem;
     }
 
-    .about, .contact__footer, .link {
+    .about,
+    .contact__footer,
+    .link {
         width: 100%;
     }
 
     .footer__copy {
-        margin: 2rem 0; 
+        margin: 2rem 0;
     }
 
     .social__media {
