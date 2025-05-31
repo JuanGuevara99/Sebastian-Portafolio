@@ -97,6 +97,59 @@ img {
 }
 
 
+/* ===================== BARRA DE NAVEGACIÓN ===================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #000; /* Fondo negro */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar__logo:hover {
+  color: #f57c00;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar__menu li a:hover {
+  color: #f57c00;
+}
+
+.navbar__toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
 /*=========================== PERFIL =========================*/
 .perfil {
     position: relative;
@@ -113,8 +166,8 @@ img {
 }
 
 .perfil__imagen {
-    width: 150px;
-    height: 160px;
+    width: 180px;
+    height: 185px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -123,7 +176,7 @@ img {
 }
 
 .perfil__imagen img {
-    width: 138px;
+    width: 200px;
     height: auto;
 }
 
@@ -146,7 +199,7 @@ img {
 }
 
 .perfil__profesion {
-    font-weight: 500;
+    font-weight: 600;
     color: var(--title-color);
     margin-bottom: .2rem;
 }
@@ -213,11 +266,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.about__img {
-    width: 30%;
-    margin-top: 2rem;
 }
 
 span {
@@ -750,4 +798,29 @@ form .textarea__field .error__txt {
         display: flex;
         gap: 1rem;
     }
+}
+
+
+/* Versión móvil */
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+    text-align: center;
+  }
+
+  .navbar__menu.active {
+    display: flex;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
 }
