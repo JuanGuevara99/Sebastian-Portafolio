@@ -21,38 +21,55 @@
 </head>
 
 <body>
-     <!--=================== HEADER PERFIL =====================-->
-     <header class="perfil container">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="#" class="navbar__logo">Sebastian Guevara</a>
+
+        <ul class="navbar__menu" id="navbar-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="navbar__toggle" id="navbar-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+
+    <!--=================== HEADER PERFIL =====================-->
+    <header class="perfil container">
 
         <div class="perfil__container">
             <div class="perfil__datos">
                 <div class="perfil__border">
                     <div class="perfil__imagen">
-                        <img src="Archivos/img/foto__perfil.png" alt="">
+                        <img src="Archivos/img/Foto LinkedIn.png" alt="Foto de perfil" loading="lazy"/>
                     </div>
                 </div>
 
                 <h2 class="perfil__nombre">Sebastian Guevara</h2>
                 <h3 class="perfil__profesion">Ingeniero De Sistemas</h3>
-                <h4 class="perfil__profesion2">Esp. Desarrollo de Software (Candidato)</h4>
+                <h4 class="perfil__profesion2">Esp. Desarrollo de Software </h4>
 
                 <ul class="perfil__social">
-                    <a href="https://github.com/JuanGuevara99" target="_blanck" class="perfil__social-link">
+                    <a href="https://github.com/JuanGuevara99" target="_blank" class="perfil__social-link">
                         <i class="ri-github-line"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/juan-sebastian-guevara-nino/" target="_blanck"
+                    <a href="https://www.linkedin.com/in/juan-sebastian-guevara-nino/" target="_blank"
                         class="perfil__social-link">
                         <i class="ri-linkedin-fill"></i>
                     </a>
-                    <a href="https://wa.link/vwwxna" target="_blanck" class="perfil__social-link">
+                    <a href="https://wa.link/vwwxna" target="_blank" class="perfil__social-link">
                         <i class="ri-whatsapp-line"></i>
                     </a>
                 </ul>
             </div>
 
             <div class="perfil__button">
-                <a href="https://drive.google.com/file/d/1YOevbSzFnnBoJ7fdn86pbE_FSopxBam3/view?usp=sharing"
-                    target="_blanck" class="button">Descargar CV
+                <a href="https://drive.google.com/file/d/1h6ZTPyJaPW5qUiAQl_ssHeXNjmpjbALd/view?usp=sharing"
+                    target="_blank" class="button">Descargar CV
                     <i class="ri-download-cloud-line"></i>
                 </a>
             </div>
@@ -62,18 +79,16 @@
 
 
 
-
+    <!--=================== SOBRE MÍ =====================-->
     <section class="about__me" id="about">
         <h2>SOBRE MÍ</h2>
         <div class="container__about">
             <div class="about__content">
-                <p>Soy Ingeniero de Sistemas. Actualmente me encuentro realizando mis estudios de especialista en
-                    desarrollo de software. Además, cuento con conocimientos en la parte de Marketing Digital,
-                    cuento con habilidades para trabajar en equipo y contribuir al desarrollo de diferentes
-                    proyectos.</p>
-                <div class="about__img">
-                    <img src="Archivos/img/logo SG.png" alt="Sebastian Guevara">
-                </div>
+                <p>Ingeniero de Sistemas con especialización en Desarrollo de Software y experiencia en desarrollo
+                    web y aplicaciones empresariales. Tengo conocimientos en front-end y back-end, con enfoque en
+                    el desarrollo de interfaces dinámicas con Vue.js, AJAX y JavaScript. También he trabajado en el
+                    desarrollo de sistemas en Java y PHP, aplicando MVC para garantizar escalabilidad y organización
+                    del código.</p>
             </div>
         </div>
     </section>
@@ -110,7 +125,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
 
@@ -121,7 +135,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
 
@@ -132,7 +145,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +157,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Bootstrap 5</h3>
-                                        <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
                                 <div class="skills__blob">
@@ -155,7 +166,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Vue JS</h3>
-                                        <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +188,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">MySQL</h3>
-                                        <span class="skills__level">Básico</span>
                                     </div>
                                 </div>
 
@@ -189,7 +198,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Firebase</h3>
-                                        <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
 
@@ -200,7 +208,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Java</h3>
-                                        <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +220,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Kotlin</h3>
-                                        <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +241,7 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">GitHub</h3>
-                                        <span class="skills__level">Intermedio</span>
+
                                     </div>
                                 </div>
 
@@ -246,7 +252,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Visual Studio</h3>
-                                        <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
 
@@ -257,7 +262,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Workbench</h3>
-                                        <span class="skills__level">Intermedio</span>
                                     </div>
                                 </div>
                             </div>
@@ -271,7 +275,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">NetBeans</h3>
-                                        <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
 
@@ -282,7 +285,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Android Studio</h3>
-                                        <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
 
@@ -293,7 +295,6 @@
                                     <i class="ri-checkbox-circle-line"></i>
                                     <div>
                                         <h3 class="skills__name">Xampp</h3>
-                                        <span class="skills__level">Avanzado</span>
                                     </div>
                                 </div>
                             </div>
@@ -319,7 +320,7 @@
                         </div>
                     </article>
 
-                    <!--Proyecto 2
+                    <!--Proyecto 2-->
                     <article class="projects__card">
                         <img src="Archivos/img/para sumercé2.png" alt="ecomerce para sumercé" class="projects__img">
 
@@ -332,7 +333,7 @@
                                 </a>
                             </div>
                         </div>
-                    </article>-->
+                    </article>
                 </div>
             </div>
         </section>
@@ -388,19 +389,18 @@
         <div class="footer__info">
             <div class="footer_width about">
                 <h2>Sobre Mí</h2>
-                <p>Soy, Ingeniero de Sistemas y actualmente estoy realizando mis estudios como especialista
-                    en Desarrollo de Software.
+                <p>Soy, Ingeniero de Sistemas y especialista en Desarrollo de Software.
                 </p>
                 <div class="social__media">
                     <ul>
-                        <a href="https://github.com/JuanGuevara99" target="_blanck" class="perfil__social-link">
+                        <a href="https://github.com/JuanGuevara99" target="_blank" class="perfil__social-link">
                             <i class="ri-github-line"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/juan-sebastian-guevara-nino/" target="_blanck"
+                        <a href="https://www.linkedin.com/in/juan-sebastian-guevara-nino/" target="_blank"
                             class="perfil__social-link">
                             <i class="ri-linkedin-fill"></i>
                         </a>
-                        <a href="https://wa.link/vwwxna" target="_blanck" class="perfil__social-link">
+                        <a href="https://wa.link/vwwxna" target="_blank" class="perfil__social-link">
                             <i class="ri-whatsapp-line"></i>
                         </a>
                     </ul>
@@ -433,7 +433,7 @@
             </div>
 
             <div class="copy__right">
-                <p>&#169 COPYRIGHT 2024 SEBASTIAN GUEVARA ALL RIGHTS RESERVED.</p>
+                <p>&#169 COPYRIGHT 2025 SEBASTIAN GUEVARA - DERECHOS RESERVADOS.</p>
             </div>
         </div>
     </footer>
