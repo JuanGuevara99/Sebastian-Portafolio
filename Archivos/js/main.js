@@ -119,3 +119,22 @@ form.addEventListener("submit", (e) => {
         return false;
     }
 });
+
+const toggle = document.getElementById('navbar-toggle');
+  const menu = document.getElementById('navbar-menu');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    // Cambiar icono (hamburguesa / cerrar)
+    toggle.querySelector('i').classList.toggle('ri-menu-line');
+    toggle.querySelector('i').classList.toggle('ri-close-line');
+  });
+
+  // Cerrar menú cuando se da click en un enlace (opcional)
+  document.querySelectorAll('.navbar__menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      toggle.querySelector('i').classList.add('ri-menu-line');
+      toggle.querySelector('i').classList.remove('ri-close-line');
+    });
+  });
